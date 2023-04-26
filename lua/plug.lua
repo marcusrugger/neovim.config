@@ -21,7 +21,8 @@ return require('packer').startup(function(use)
     }
 
     use { 'kdheepak/lazygit.nvim' }     -- lazygit
-    use { 'github/copilot.vim' }
+    use { 'github/copilot.vim' }        -- Github Copilot
+    use { 'numToStr/FTerm.nvim' }       -- floating terminal
 
     -- [[ Theme ]]
     use { 'Mofiqul/vscode.nvim' }

@@ -20,3 +20,6 @@ require('lualine').setup {
     }
 }
 
+require('FTerm').setup {
+    border = 'rounded'
+}
