@@ -3,14 +3,14 @@
 return require('packer').startup(function(use)
 
     -- [[ Plugins Go Here ]]
-    use {                                              -- filesystem navigation
+    use {                                               -- filesystem navigation
         'kyazdani42/nvim-tree.lua',
-        requires = 'kyazdani42/nvim-web-devicons'        -- filesystem icons
+        requires = 'kyazdani42/nvim-web-devicons'       -- filesystem icons
     }
-    -- use { 'mhinz/vim-startify' }                       -- start screen
-    use { 'DanilaMihailov/beacon.nvim' }               -- cursor jump
+    -- use { 'mhinz/vim-startify' }                     -- start screen
+    use { 'DanilaMihailov/beacon.nvim' }                -- cursor jump
     use {
-        'nvim-lualine/lualine.nvim',                     -- statusline
+        'nvim-lualine/lualine.nvim',                    -- statusline
         requires = {'kyazdani42/nvim-web-devicons',
                     opt = true}
     }
@@ -20,9 +20,10 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use { 'kdheepak/lazygit.nvim' }     -- lazygit
-    use { 'github/copilot.vim' }        -- Github Copilot
-    use { 'numToStr/FTerm.nvim' }       -- floating terminal
+    use { 'kdheepak/lazygit.nvim' }             -- lazygit
+    use { 'github/copilot.vim' }                -- Github Copilot
+    use { 'numToStr/FTerm.nvim' }               -- floating terminal
+    use { 'nvim-treesitter/nvim-treesitter' }   -- tree sitter
 
     -- [[ Theme ]]
     use { 'Mofiqul/vscode.nvim' }
