@@ -5,7 +5,10 @@ local cmd = vim.api.nvim_command
 -- Snip...
 
 -- [[ Context ]]
-opt.number = true
+opt.number = true                -- bool: Show line numbers
+opt.relativenumber = true        -- bool: Show line numbers relative to the line with the cursor
+-- opt.cursorlineopt = "number"     -- str:  Highlight the linenumber with the cursor with a different background
+-- opt.number = true
 
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
