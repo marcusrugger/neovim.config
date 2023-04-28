@@ -7,6 +7,13 @@ map('i', 'jk', '', {})
 -- Toggle nvim-tree
 map('n', '<leader>n', [[:NvimTreeToggle<cr>]], {})
 
+local function opts(desc)
+    return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+end
+
+-- NvimTree
+local nvimtree = require('nvim-tree.api')
+vim.keymap.set('n', '<LeftRelease>', nvimtree.node.open.edit, opts('CD'))
 
 -- Telescope
 local telescope = require('telescope.builtin')
