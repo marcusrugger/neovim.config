@@ -12,8 +12,8 @@ local function opts(desc)
 end
 
 -- NvimTree
-local nvimtree = require('nvim-tree.api')
-vim.keymap.set('n', '<LeftRelease>', nvimtree.node.open.edit, opts('CD'))
+-- local nvimtree = require('nvim-tree.api')
+-- vim.keymap.set('n', '<LeftRelease>', nvimtree.node.open.edit, opts('CD'))
 
 -- Telescope
 local telescope = require('telescope.builtin')
