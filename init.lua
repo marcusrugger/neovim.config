@@ -20,9 +20,14 @@ require('lualine').setup {
     }
 }
 
-require('FTerm').setup {
-    border = 'rounded'
+require('toggleterm').setup{
+    open_mapping = [[<c-\>]],
+    direction = 'float'
 }
+
+-- require('FTerm').setup {
+--     border = 'rounded'
+-- }
 
 require'nvim-treesitter.configs'.setup {
     -- Modules and its options go here
