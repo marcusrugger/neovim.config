@@ -25,7 +25,7 @@ vim.keymap.set('n', '<leader>fh', telescope.help_tags, {})
 vim.keymap.set('n', '<leader>fs', telescope.current_buffer_fuzzy_find, {})
 
 -- LazyGit
-vim.keymap.set('n', '<leader>gg', [[:LazyGit<cr>]], {})
+vim.keymap.set('n', '<leader>g', [[:LazyGit<cr>]], {})
 
 -- FTerm
 vim.keymap.set('n', '<leader>t', [[:lua require('FTerm').toggle()<cr>]], {})
