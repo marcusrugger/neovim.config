@@ -6,7 +6,7 @@ local cmd = vim.api.nvim_command
 
 -- [[ Context ]]
 opt.number = true                -- bool: Show line numbers
-opt.relativenumber = true        -- bool: Show line numbers relative to the line with the cursor
+opt.relativenumber = false        -- bool: Show line numbers relative to the line with the cursor
 -- opt.cursorlineopt = "number"     -- str:  Highlight the linenumber with the cursor with a different background
 -- opt.number = true
 

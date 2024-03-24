@@ -21,7 +21,7 @@ require('lualine').setup {
 }
 
 require('toggleterm').setup{
-    open_mapping = [[<c-\>]],
+    open_mapping = [[<m-\>]],
     direction = 'float'
 }
 
@@ -32,7 +32,14 @@ require('toggleterm').setup{
 require'nvim-treesitter.configs'.setup {
     -- Modules and its options go here
     highlight = { enable = true },
+    folder = { enable = true },
     incremental_selection = { enable = true },
     textobjects = { enable = true },
+    ensure_installed = { "bash","c_sharp","lua","python","json","yaml" }
 }
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
+vim.opt.foldopen = ""
 

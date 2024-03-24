@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
     -- use { 'numToStr/FTerm.nvim' }               -- floating terminal
     use { 'akinsho/toggleterm.nvim' }           -- toggle terminal
     use { 'nvim-treesitter/nvim-treesitter' }   -- tree sitter
+    use { 'christoomey/vim-tmux-navigator' }    -- tmux navigation
 
     -- [[ Theme ]]
     use { 'Mofiqul/vscode.nvim' }
