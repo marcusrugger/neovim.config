@@ -13,8 +13,9 @@ opt.relativenumber = false        -- bool: Show line numbers relative to the lin
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str:  Allow syntax highlighting
 opt.termguicolors = true         -- bool: If term supports ui color then enable
-vim.g.adwaita_darker = true
-cmd('colorscheme adwaita')        -- cmd:  Set the colorscheme
+--vim.g.adwaita_darker = true
+vim.g.moonfly = true
+cmd('colorscheme moonfly')        -- cmd:  Set the colorscheme
 
 -- [[ Whitespace ]]
 opt.expandtab = true             -- bool: Use spaces instead of tabs

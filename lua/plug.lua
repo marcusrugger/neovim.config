@@ -30,5 +30,13 @@ return require('packer').startup(function(use)
     -- [[ Theme ]]
     use { 'Mofiqul/vscode.nvim' }
     use { 'Mofiqul/adwaita.nvim' }
+    use {
+        'folke/tokyonight.nvim',
+        style = 'night'
+    }
+    use {
+        'bluz71/vim-moonfly-colors',
+        name = 'moonfly'
+    }
 
 end)

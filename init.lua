@@ -6,13 +6,18 @@
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
+require("plug")
 require("basic")
 require("opts")
 require("keys")
-require("plug")
 
 -- PLUGINS: Add this section
-require('nvim-tree').setup{}
+require('nvim-tree').setup {
+    view = {
+        width = 60,
+        side = 'left'
+    }
+}
 
 require('lualine').setup {
     options = {
@@ -20,7 +25,7 @@ require('lualine').setup {
     }
 }
 
-require('toggleterm').setup{
+require('toggleterm').setup {
     open_mapping = [[<m-\>]],
     direction = 'float'
 }
