@@ -12,7 +12,10 @@ local function opts(desc)
 end
 
 -- NvimTree
--- local nvimtree = require('nvim-tree.api')
+local nvimtree = require('nvim-tree.api')
+vim.keymap.set('n', '<leader>b', function()
+    nvimtree.tree.find_file({ open = true})
+end, {})
 -- vim.keymap.set('n', '<LeftRelease>', nvimtree.node.open.edit, opts('CD'))
 
 -- Telescope
