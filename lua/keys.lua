@@ -6,6 +6,8 @@ map('i', 'jk', '', {})
 
 -- Toggle nvim-tree
 map('n', '<leader>n', [[:NvimTreeToggle<cr>]], {})
+map('n', '<C-j>', '<C-e>', {})
+map('n', '<C-k>', '<C-y>', {})
 
 local function opts(desc)
     return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
@@ -31,4 +33,10 @@ vim.keymap.set('n', '<leader>fs', telescope.current_buffer_fuzzy_find, {})
 vim.keymap.set('n', '<leader>g', [[:LazyGit<cr>]], {})
 
 -- FTerm
-vim.keymap.set('n', '<leader>t', [[:lua require('FTerm').toggle()<cr>]], {})
+-- vim.keymap.set('n', '<leader>t', [[:lua require('FTerm').toggle()<cr>]], {})
+
+-- OmniSharp
+vim.keymap.set('n', '<leader>o', [[:OmniSharpGotoDefinition<cr>]], {})
+vim.keymap.set('n', '<leader>l', [[:OmniSharpFindUsages<cr>]], {})
+vim.keymap.set('n', '<leader>h', [[:OmniSharpSignatureHelp<cr>]], {})
+

@@ -6,6 +6,14 @@
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
+vim.g.OmniSharp_server_use_mono = 0
+vim.g.OmniSharp_server_use_net6 = 1
+
+vim.cmd [[
+  set exrc
+  set secure
+]]
+
 require("plug")
 require("basic")
 require("opts")
@@ -48,3 +56,11 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldenable = false
 vim.opt.foldopen = ""
 
+-- vim.g.OmniSharp_server_path = "linux.assets"
+
+-- require('omnisharp').setup {
+--     server = {
+--         command = { 'omnisharp', '--languageserver' },
+--         capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+--     }
+-- }

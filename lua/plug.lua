@@ -39,4 +39,6 @@ return require('packer').startup(function(use)
         name = 'moonfly'
     }
 
+    use { 'OmniSharp/omnisharp-vim' }           -- C# intellisense
+
 end)
